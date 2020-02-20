@@ -1,0 +1,58 @@
+GET http://localhost:3000/Users
+
+###
+
+POST http://localhost:3000/Users
+Content-Type: application/json
+
+{
+    "name":"Wicho",
+    "password":"12345"
+}
+
+###
+GET http://localhost:3000/createTicketObject
+
+
+###
+POST http://localhost:3000/createTicket
+Content-Type: application/json
+
+{
+  "lastModified": "2019-04-23T18:25:43.511Z",
+  "stat": "Sold",
+  "dateCreate": "2019-04-23T18:25:43.511Z",
+  "lastModifiedBy": "Carlos",
+  "createdby": "Miguel Gonzalez",
+  "targetPrice": 500.00,
+  "price": null,
+  "totalInvestment": 50.56,
+  "image": null,
+  "condit": "Used",
+  "description": "MacBook Pro Randomly Shuts Down" ,
+  "priority": 1,
+  "type": "Repair" , 
+  "admin_id": 21331, 
+  "product": "Laptop",
+  "service": "Fix",
+  "profit_percent": 3,
+  "category":"Computer/electronic",
+  "issue": "Identified",
+  "customer_id":7
+}
+
+###
+GET http://localhost:3000/getTicket
+Content-Type: application/json
+
+{
+  "ticketNum":2
+}
+
+###
+GET http://localhost:3000/getTickets
+
+
+
+###
+GET http://localhost:3000/createTicketObject
